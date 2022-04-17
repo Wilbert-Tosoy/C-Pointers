@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int m = 10;
+    int n, o;
+    int *z = &m;
+    printf("Here is m = 10, n and o are integer variable and *z is an integer\n");
+    printf("\tz stores the address of m: %d\n", z);
+    printf("\t*z stores the value of m: %d\n", *z);
+    printf("\t&m is the address of m: %d\n", &m);
+    printf("\t&n is the address of n: %d\n", &n);
+    printf("\t&o is the address of o: %d\n", &o);
+    printf("\t&z is the address of z: %d\n", &z);
+
+    return 0;
+}
