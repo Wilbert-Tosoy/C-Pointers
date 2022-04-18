@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int x, y;
+    int *p1, *p2;
+    printf("\tEnter the first number: ");
+    scanf("%d", &x);
+    p1 = &x;
+    printf("\tEnter the second number: ");
+    scanf("%d", &y);
+    p2 = &y;
+
+    if (*p1 > *p2) {
+        printf("%d is maximum number", *p1);
+    } else if (*p1 < *p2) {
+        printf("%d is maximum number", *p2);
+    } else {
+        printf("Both are equal to each other");
+    }
+
+    return 0;
+}
