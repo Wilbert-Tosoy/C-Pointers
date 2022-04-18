@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int m = 300;
+    float fx = 300.600006;
+    char cht = 'z';
+
+    printf("\tm = 300\n\tfx = 300.600006\n\tcht = z\n");
+    printf("Using & operator\n");
+    printf("\taddress of m: %d\n", &m);
+    printf("\taddress of fx: %d\n", &fx);
+    printf("\taddress of cht: %d\n", &cht);
+    printf("Using & and * operator\n");
+    printf("\tvalue at address of m: %d\n", *(&m));
+    printf("\tvalue at address of fx: %f\n", *(&fx));
+    printf("\tvalue at address of cht: %c\n", *(&cht));
+    printf("Using only pointer variable\n");
+    int *pi = &m;
+    float *pf = &fx;
+    char *pchar = &cht;
+    printf("\taddress of m: %d\n", pi);
+    printf("\taddress of fx: %d\n", pf);
+    printf("\taddress of cht: %d\n", pchar);
+    printf("Using only pointer operator\n");
+    printf("\tvalue at address of m: %d\n", *pi);
+    printf("\tvalue at address of fx: %f\n", *pf);
+    printf("\tvalue at address of cht: %c\n", *pchar);
+
+    return 0;
+}
